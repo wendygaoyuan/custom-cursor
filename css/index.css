@@ -1,0 +1,56 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    cursor: none;
+    background: #111111;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p span {
+    background-image: linear-gradient(transparent 60px, #f243b3 50%, #ffca47 100%);
+}
+
+.cursor {
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+.cursor div {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.cursor .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+}
+
+.cursor .cursor-circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+}
